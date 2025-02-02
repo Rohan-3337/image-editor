@@ -34,7 +34,7 @@ export default function BgRemove() {
         <Button variant="outline" className="py-8">
           <span className="flex gap-1 items-center justify-center flex-col text-xs font-medium">
             BG Removal
-            <Image size={18} />
+            <Image size={18}  />
           </span>
         </Button>
       </PopoverTrigger>

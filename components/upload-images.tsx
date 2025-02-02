@@ -1,21 +1,21 @@
 "use client"
 
-// import { uploadImage } from "@/server/upload-image"
-// import { useImageStore } from "@/lib/store"
-// import { useDropzone } from "react-dropzone"
-// import Lottie from "lottie-react"
-import { Card, CardContent } from "../ui/card"
-// import { cn } from "@/lib/utils"
-// import { useLayerStore } from "@/lib/layer-store"
-// import imageAnimation from "@/public/animations/image-upload.json"
-// import { toast } from "sonner"
+import { uploadImage } from "@/server/upload-image"
+import { useImageStore } from "@/lib/store"
+import { useDropzone } from "react-dropzone"
+import Lottie from "lottie-react"
+import { Card, CardContent } from "./ui/card";
+import { cn } from "@/lib/utils"
+import { useLayerStore } from "@/lib/layer-store"
+import imageAnimation from "@/public/animations/image-upload.json"
+import { toast } from "sonner"
 
 export default function UploadImage() {
-//   const setTags = useImageStore((state) => state.setTags)
-//   const setGenerating = useImageStore((state) => state.setGenerating)
-//   const activeLayer = useLayerStore((state) => state.activeLayer)
-//   const updateLayer = useLayerStore((state) => state.updateLayer)
-//   const setActiveLayer = useLayerStore((state) => state.setActiveLayer)
+  const setTags = useImageStore((state) => state.setTags)
+  const setGenerating = useImageStore((state) => state.setGenerating)
+  const activeLayer = useLayerStore((state) => state.activeLayer)
+  const updateLayer = useLayerStore((state) => state.updateLayer)
+  const setActiveLayer = useLayerStore((state) => state.setActiveLayer)
 
   const { getRootProps, getInputProps, isDragActive } = useDropzone({
     maxFiles: 1,
